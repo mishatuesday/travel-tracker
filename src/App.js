@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React I HATE GIT
+          Learn React I LOVE GIT!
         </a>
       </header>
     </div>
