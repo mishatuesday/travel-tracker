@@ -1,25 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import DestinationPage from './DestinationPage'
+import Header from './components/Header';
+import DestinationPage from './components/DestinationPage'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React I LOVE GIT!
-        </a>
-      </header>
+      {/* our code here */}
     </div>
   );
 }
