@@ -29,7 +29,12 @@ function DestinationPage() {
                     <AddDestinationForm />
                 </Route>
                 <Route path="/destinations">
+                    <Search />
+                    <Filter />
                     <DestinationList destinations={destinations}/>
+                </Route>
+                <Route path="/feature/:id">
+                    <Feature destinations={destinations}/>
                 </Route>
             </Switch>
         </div>
