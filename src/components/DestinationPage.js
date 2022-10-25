@@ -18,6 +18,11 @@ function DestinationPage() {
         .then(setDestinations)
     },[])
 
+    const handleAddDestination = newDestination => {
+        const updatedDestinationArray = [...destinations, newDestination]
+        setDestinations(updatedDestinationArray)
+    }
+
     return (
         <div>
             <NavLink to="/destinations">Destinations</NavLink>
@@ -26,7 +31,7 @@ function DestinationPage() {
                     <p>Welcome to Travel Tracker Beta!</p>
                 </Route>
                 <Route path="/new">
-                    <AddDestinationForm />
+                    <AddDestinationForm handleAddDestination={handleAddDestination}/>
                 </Route>
                 <Route path="/destinations">
                     <Search />
