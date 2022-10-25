@@ -4,16 +4,25 @@ import { useParams } from 'react-router-dom'
 function Feature({destinations}) {
     const { id } = useParams()
     const destination = destinations[id-1]
-    console.log(destination)
     return (
+        <div> 
+        {destination ?
         <div className="feature-container">
-            <h2>Feature: {destination ? destination.name : "Loading..."}</h2>
+            <h2>Feature: {destination.name}</h2>
+            <p>Country: {destination.country}</p>
+            <img src={destination.image} alt={destination.name} /> 
+            <ul>
+                {
+                    destination.amenities.map(amenity => <li key={amenity}>{amenity}</li>)
+                }
+            </ul>
         </div>
-    )
+        :
+        <div>
+        <h2>"Loading..."</h2>
+        </div>}
+    </div>)
 }
-
-
-
 
 
 
