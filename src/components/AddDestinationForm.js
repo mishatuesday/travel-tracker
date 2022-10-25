@@ -1,7 +1,7 @@
 import React from 'react';
 
 function AddDestinationForm() {
-    return <p>This is AddDestinationForm</p>
+    return <h2>This is AddDestinationForm (Route 3)</h2>
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Feature() {
-    return <p>This is Feature</p>
+    return <h2>This is Feature (Route 1)</h2>
 }
 
 
