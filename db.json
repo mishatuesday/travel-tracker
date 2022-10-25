@@ -5,91 +5,91 @@
         "name": "Geneva",
         "country": "Switzerland",
         "image": "https://deih43ym53wif.cloudfront.net/chillon-castle-geneva-lake-switzerland-shutterstock_361751813_fbaba5c297.jpeg",
-        "features": ["Winter Sports", "Lake", "5-star Restaurants", "Hiking", "Architecture"]
+        "amenities": ["Winter Sports", "Lake", "5-star Restaurants", "Hiking", "Architecture"]
       },
       {
         "id": 2,
         "name": "Hokkaido",
         "country": "Japan",
         "image": "https://peakvisor.com/photo/Summer-Flower-Fields-Biei-Hokkaido.jpg",
-        "features": ["Winter Sports", "Beach", "5-star Restaurants", "Architecture"]
+        "amenities": ["Winter Sports", "Beach", "5-star Restaurants", "Architecture"]
       },
       {
         "id": 3,
         "name": "Zihuatanejo",
         "country": "Mexico",
         "image": "https://www.mensjournal.com/wp-content/uploads/2021/12/ZihuaHeader.jpg?quality=40&strip=all",
-        "features": ["Beach", "5-star Restaurants", "Fishing"]
+        "amenities": ["Beach", "5-star Restaurants", "Fishing"]
       },
       {
         "id": 4,
         "name": "Positano",
         "country": "Italy",
         "image": "https://a.cdn-hotels.com/gdcs/production144/d547/b9cfd8e5-212f-4945-8010-b76f326ccd18.jpg?impolicy=fcrop&w=800&h=533&q=medium",
-        "features": ["Beach", "5-star Restaurants", "Hiking", "Architecture"]
+        "amenities": ["Beach", "5-star Restaurants", "Hiking", "Architecture"]
       },
       {
         "id": 5,
         "name": "Isla Holbox",
         "country": "Quintana Roo, Mexico",
         "image": "https://www.ourescapeclause.com/wp-content/uploads/2017/01/shutterstock_1161420244-scaled.jpg",
-        "features": ["Beach", "Night Life", "Budget Friendly", "Snorkeling", "Live Music"]
+        "amenities": ["Beach", "Night Life", "Budget Friendly", "Snorkeling", "Live Music"]
       },
       {
         "id": 6,
         "name": "New Orleans",
         "country": "USA",
         "image": "https://media.timeout.com/images/105770969/750/422/image.jpg",
-        "features": ["Night Life", "Museums", "5-star Restaurants", "Budget Friendly", "Guided Tours", "Live Music"]
+        "amenities": ["Night Life", "Museums", "5-star Restaurants", "Budget Friendly", "Guided Tours", "Live Music"]
       },
       {
         "id": 7,
         "name": "Reykjavik",
         "country": "Iceland",
         "image": "https://tourscanner.com/blog/wp-content/uploads/2021/07/things-to-do-in-Reykjavik.jpg",
-        "features": ["Hot Springs", "5-star Restaurants", "Skiing", "Snowboarding", "Museums”, “Guided Tours", "Hiking"]
+        "amenities": ["Hot Springs", "5-star Restaurants", "Skiing", "Snowboarding", "Museums”, “Guided Tours", "Hiking"]
       },
       {
         "id": 8,
         "name": "New York City",
         "country": "USA",
         "image": "https://www.nycgo.com/images/uploads/NY_in_3_days/TimeSquare-Manhattan-NYC-BrittanyPetronella_0069sat.jpg",
-        "features": ["Nightlife", "5-star Restaurants", "Museums", "Architecture", "Guided Tours", "Live Music"]
+        "amenities": ["Nightlife", "5-star Restaurants", "Museums", "Architecture", "Guided Tours", "Live Music"]
       },
       {
         "id": 9,
         "name": "Brimley, Michigan",
         "country": "USA",
         "image": "https://www.ourescapeclause.com/wp-content/uploads/2017/01/shutterstock_1161420244-scaled.jpg",
-        "features": []
+        "amenities": []
       },
       {
         "id": 10,
         "name": "Ocho Rios",
         "country": "Jamaica",
         "image": "https://media.timeout.com/images/105770969/750/422/image.jpg",
-        "features": []
+        "amenities": []
       },
       {
         "id": 11,
         "name": "Bogotá",
         "country": "Colombia",
         "image": "https://tourscanner.com/blog/wp-content/uploads/2021/07/things-to-do-in-Reykjavik.jpg",
-        "features": []
+        "amenities": []
       },
       {
         "id": 12,
         "name": "Glasgow, Scotland",
         "country": "United Kingdom",
         "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2F64.media.tumblr.com%2Fad2b470508d271914b7f1bfff82a6042%2Ftumblr_own0d8wyoQ1qzyjm6o1_1280.jpg&imgrefurl=https%3A%2F%2Fnycgo.tumblr.com%2Fpost%2F165841436904%2Fthis-cozy-waterside-park-packs-a-lot-into-its&tbnid=dOuRs9ii-DXEzM&vet=10CGoQMyiWAWoXChMIuPOx76n5-gIVAAAAAB0AAAAAEAI..i&docid=3WaAa7a8MQDbsM&w=1280&h=854&itg=1&q=transmitter%20park&ved=0CGoQMyiWAWoXChMIuPOx76n5-gIVAAAAAB0AAAAAEAI",
-        "features": []
+        "amenities": []
       },
       {
         "id": 13,
         "name": "London, England",
         "country": "United Kingdom",
         "image": "https://www.google.com/imgres?imgurl=https%3A%2F%2F64.media.tumblr.com%2Fad2b470508d271914b7f1bfff82a6042%2Ftumblr_own0d8wyoQ1qzyjm6o1_1280.jpg&imgrefurl=https%3A%2F%2Fnycgo.tumblr.com%2Fpost%2F165841436904%2Fthis-cozy-waterside-park-packs-a-lot-into-its&tbnid=dOuRs9ii-DXEzM&vet=10CGoQMyiWAWoXChMIuPOx76n5-gIVAAAAAB0AAAAAEAI..i&docid=3WaAa7a8MQDbsM&w=1280&h=854&itg=1&q=transmitter%20park&ved=0CGoQMyiWAWoXChMIuPOx76n5-gIVAAAAAB0AAAAAEAI",
-        "features": []
+        "amenities": []
       }
     ]
 }

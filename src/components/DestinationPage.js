@@ -4,6 +4,7 @@ import Filter from './Filter';
 import Search from './Search';
 import DestinationList from './DestinationList';
 import AddDestinationForm from './AddDestinationForm';
+import { Switch, Route, NavLink } from 'react-router-dom'
 
 const destinationUrl = 'http://localhost:3000/destinations/'
 
@@ -19,12 +20,18 @@ function DestinationPage() {
 
     return (
         <div>
-            <h2>Destination Page (Route 2)</h2>
-            <Search />
-            <Filter />
-            <DestinationList destinations={destinations}/>
-            <Feature />
-            <AddDestinationForm />
+            <NavLink to="/destinations">Destinations</NavLink>
+            <Switch>
+                <Route exact path="/">
+                    <p>Welcome to Travel Tracker Beta!</p>
+                </Route>
+                <Route path="/new">
+                    <AddDestinationForm />
+                </Route>
+                <Route path="/destinations">
+                    <DestinationList destinations={destinations}/>
+                </Route>
+            </Switch>
         </div>
     )
 }
