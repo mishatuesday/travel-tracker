@@ -1,7 +1,13 @@
 import React from 'react';
 
-function Feature() {
-    return <h2>This is Feature (Route 1)</h2>
+function Feature({destinations}) {
+    const destination = destinations[0]
+    console.log(destination)
+    return (
+        <div className="feature-container">
+            <h2>Feature: {destination ? destination.name : "Loading..."}</h2>
+        </div>
+    )
 }
 
 

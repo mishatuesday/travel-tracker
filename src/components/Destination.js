@@ -6,7 +6,7 @@ const Destination = props => {
     return (
         <div className="destination-list">
             <p>{destination.name}</p>
-            <img src={destination.image} alt={`Photo of ${destination.name}`}></img>
+            <img src={destination.image} alt={destination.name}></img>
         </div>
     )
 }

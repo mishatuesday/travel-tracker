@@ -13,5 +13,9 @@ code {
 }
 
 .destination-list img{
-  max-height: 150px;
+  max-height: 80px;
+}
+
+.feature-container img{
+  max-height: 100;
 }
