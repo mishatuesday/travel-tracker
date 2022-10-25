@@ -3,7 +3,10 @@ import Destination from './Destination'
 
 const DestinationList = props => {
     return (
-        <div>This is the Destination List</div>
+        <div>
+            <h3>Destination List:</h3>
+            <Destination />
+        </div>
     )
 }
 
