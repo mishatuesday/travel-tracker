@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Form, Header, Image} from 'semantic-ui-react'
 
 const amenities = ["Beach", "Nightlife", "5-Star Restaurants", "Hiking", "Museums"]
 
@@ -57,35 +58,46 @@ function AddDestinationForm(props) {
 
     return (
         <div className="new-destination-segment">
-            <h2>Add New Destination</h2>
-                <form className="new-destination-form" onSubmit ={e => handleSubmit(e)}>
-                    <input type="text" name="name" placeholder="Destination Name" value={name} onChange={e => setName(e.target.value)}/>
-                    <input type="text" name="name" placeholder="Destination Country" value={country} onChange={e => setCountry(e.target.value)}/>
-                    <input type="text" name="image" placeholder="Image URL" value={image} onChange={e => setImage(e.target.value)}/>
-                    <div className="amenity-list">
-                        <h3>Select Amenities:</h3>
+            <Header as='h1' image>
+                <Image src='https://cdn-icons-png.flaticon.com/512/2798/2798097.png'/>
+                Add New Destination
+            </Header>
+            <Form className="new-destination-form" onSubmit ={e => handleSubmit(e)}>
+                {/* <form className="new-destination-form" onSubmit ={e => handleSubmit(e)}> */}
+                <Form.Group widths='equal'>
+                    <Form.Input type="text" name="name" fluid label='Destination Name' placeholder="Destination Name" value={name} onChange={e => setName(e.target.value)}/>
+                    <Form.Input type="text" name="name" fluid label='Destination Country' placeholder="Destination Country" value={country} onChange={e => setCountry(e.target.value)}/>
+                    <Form.Input type="text" name="image" fluid label='Image URL' placeholder="Image URL" value={image} onChange={e => setImage(e.target.value)}/>
+                </Form.Group>
+                    {/* <div className="amenity-list">
+                        <h3>Select Amenities:</h3> */}
+                        <label>Select Amenities:</label>
+                <Form.Group widths='equal'>
                         <ul className="amenity-list-options">
                             {amenities.map((name, index) => {
                                 return (
                                     <div key={index}>
                                         <div className="amenities-list-item">
-                                            <input 
+                                            <input
                                                 type="checkbox" 
+                                                control="input"
                                                 id={`custom-checkbox-${index}`} 
                                                 name={name} 
                                                 value={name}
                                                 checked={checkedState[index]}
                                                 onChange={() => handleOnChange(index)}
-                                            />
+                                            ></input>
                                             <label htmlFor={`custom-checkbox-${index}`}>{name}</label>
                                         </div>
                                     </div>
                                 )
                             })}
                         </ul>
-                    </div>
-                    <button className="new-destination-submit" type="submit">Add Destination</button>
-                </form>
+                    </Form.Group>
+                    {/* </div> */}
+                    <Form.Button className="new-destination-submit" type="submit">Add Destination</Form.Button>
+                {/* </form> */}
+            </Form>
         </div>
     )
 }

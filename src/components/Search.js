@@ -1,21 +1,20 @@
 import React from 'react';
+import {Input} from 'semantic-ui-react'
 
-function Search({searchTerm, setSearchTerm}) {
-    
+const Search = ({searchTerm, setSearchTerm}) => {
     return (
     <div className="searchbar">
-      <label htmlFor="search">Search Destinations:</label>
-      <input
-        type="text"
-        id="search"
-        placeholder="Type a name to search..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+      <Input
+          icon='search'
+          type="text"
+          id="search"
+          placeholder="Type a name to search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
       />
     </div>
     )
-
-   
+  
 }
 
 
@@ -24,4 +23,4 @@ function Search({searchTerm, setSearchTerm}) {
 
 
 
-export default Search;
+export default Search
