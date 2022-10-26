@@ -1,6 +1,7 @@
 import React from 'react';
 import Destination from './Destination'
 import { Link } from 'react-router-dom'
+import { Card } from 'semantic-ui-react';
 
 const DestinationList = props => {
     const {destinations} = props
@@ -10,7 +11,9 @@ const DestinationList = props => {
     return (
         <div>
             <h3>Destination List:</h3>
-            {showDestinationList}
+            <Card.Group>
+                {showDestinationList}
+            </Card.Group>
         </div>
     )
 }

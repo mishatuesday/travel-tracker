@@ -5,6 +5,7 @@ import Search from './Search';
 import DestinationList from './DestinationList';
 import AddDestinationForm from './AddDestinationForm';
 import { Switch, Route, NavLink } from 'react-router-dom'
+import { Button, Icon, Container, Header } from 'semantic-ui-react'
 
 const destinationUrl = 'http://localhost:3000/destinations/'
 
@@ -12,7 +13,7 @@ function DestinationPage() {
 
     const [destinations, setDestinations] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
-    const [amenityFilter, setAmenityFilter] = useState("Show All")
+    const [checkedAmenities, setCheckedAmenities] = useState([]) // added for amenity filter stretch goal
 
     useEffect(() => {
         fetch(destinationUrl)
@@ -24,27 +25,40 @@ function DestinationPage() {
         const updatedDestinationArray = [...destinations, newDestination]
         setDestinations(updatedDestinationArray)
     }
-    console.log(amenityFilter)
 
-    const displayedDestinations = amenityFilter === "Show All" ? 
-    destinations.filter(destination => {
+    const filteredDestinations = destinations.filter(destination => { // added for amenities filter
+        return checkedAmenities.every(v => destination.amenities.includes(v))
+    })
+
+    const displayedDestinations = 
+    filteredDestinations.filter(destination => { //changed for amenities filter
         return destination.name.toLowerCase().includes(searchTerm.toLowerCase())
     })
-    : destinations.filter(destination => destination.amenities.includes(amenityFilter))
 
     return (
         <div>
-            <NavLink to="/destinations">Browse and Search Destinations</NavLink><NavLink to="/new">Add New Destination</NavLink>
+            <Button icon labelPosition='left'>
+                <Icon name='search'/>
+                <NavLink to="/destinations">Search Destinations</NavLink>
+            </Button>
+            <Button icon labelPosition='right'>
+                <Icon name='wordpress forms'/>
+                <NavLink to="/new">Add New Destination</NavLink>
+            </Button>
             <Switch>
                 <Route exact path="/">
-                    <p>Welcome to Travel Tracker Beta!</p>
+                    <Container text>
+                        <Header as='h1'>Welcome to Travel Tracker</Header>
+                    <h3>Set your sights high and explore new destinations</h3>
+                    <img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="travel-icon"></img>
+                    </Container>
                 </Route>
                 <Route path="/new">
                     <AddDestinationForm handleAddDestination={handleAddDestination}/>
                 </Route>
                 <Route path="/destinations">
                     <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-                    <Filter amenityFilter={amenityFilter} setAmenityFilter={setAmenityFilter} />
+                    <Filter checkedAmenities={checkedAmenities} setCheckedAmenities={setCheckedAmenities}/>
                     <DestinationList destinations={displayedDestinations}/>
                 </Route>
                 <Route path="/feature/:id">
