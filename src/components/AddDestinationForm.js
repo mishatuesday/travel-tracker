@@ -31,7 +31,7 @@ function AddDestinationForm(props) {
         if (checkedState[2] === true) newAmenities.push("5-Star Restaurants")
         if (checkedState[3] === true) newAmenities.push("Hiking")
         if (checkedState[4] === true) newAmenities.push("Museums")
-        console.log(newAmenities)
+        
         fetch(`http://localhost:3000/destinations/`, {
             method: 'POST',
             headers: {
@@ -42,18 +42,23 @@ function AddDestinationForm(props) {
                 name: name,
                 country: country,
                 image: image,
-                amenities: amenities
+                amenities: newAmenities
             }),
         })
         .then(resp => resp.json())
         .then(newDestination => handleAddDestination(newDestination))
     }
+    // make this an abstracted function, call in .then ?
+    // setName("")
+    // setCountry("")
+    // setImage("")
+    // setCheckedState(false, false, false, false, false)
 
 
     return (
         <div className="new-destination-segment">
             <h2>Add New Destination</h2>
-                <form className="new-destination-form" onSubmit ={handleSubmit}>
+                <form className="new-destination-form" onSubmit ={e => handleSubmit(e)}>
                     <input type="text" name="name" placeholder="Destination Name" value={name} onChange={e => setName(e.target.value)}/>
                     <input type="text" name="name" placeholder="Destination Country" value={country} onChange={e => setCountry(e.target.value)}/>
                     <input type="text" name="image" placeholder="Image URL" value={image} onChange={e => setImage(e.target.value)}/>
