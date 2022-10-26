@@ -11,6 +11,7 @@ const destinationUrl = 'http://localhost:3000/destinations/'
 function DestinationPage() {
 
     const [destinations, setDestinations] = useState([])
+    const [searchTerm, setSearchTerm] = useState("")
 
     useEffect(() => {
         fetch(destinationUrl)
@@ -23,6 +24,10 @@ function DestinationPage() {
         setDestinations(updatedDestinationArray)
     }
 
+    const displayedDestinations = destinations.filter(destination => {
+        return destination.name.toLowerCase().includes(searchTerm.toLowerCase())
+    })
+
     return (
         <div>
             <NavLink to="/destinations">Browse and Search Destinations</NavLink><NavLink to="/new">Add New Destination</NavLink>
@@ -34,9 +39,9 @@ function DestinationPage() {
                     <AddDestinationForm handleAddDestination={handleAddDestination}/>
                 </Route>
                 <Route path="/destinations">
-                    <Search />
+                    <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
                     <Filter />
-                    <DestinationList destinations={destinations}/>
+                    <DestinationList destinations={displayedDestinations}/>
                 </Route>
                 <Route path="/feature/:id">
                     <Feature destinations={destinations}/>
