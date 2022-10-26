@@ -12,6 +12,7 @@ function DestinationPage() {
 
     const [destinations, setDestinations] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
+    const [amenityFilter, setAmenityFilter] = useState("Show All")
 
     useEffect(() => {
         fetch(destinationUrl)
@@ -23,10 +24,13 @@ function DestinationPage() {
         const updatedDestinationArray = [...destinations, newDestination]
         setDestinations(updatedDestinationArray)
     }
+    console.log(amenityFilter)
 
-    const displayedDestinations = destinations.filter(destination => {
+    const displayedDestinations = amenityFilter === "Show All" ? 
+    destinations.filter(destination => {
         return destination.name.toLowerCase().includes(searchTerm.toLowerCase())
     })
+    : destinations.filter(destination => destination.amenities.includes(amenityFilter))
 
     return (
         <div>
@@ -40,7 +44,7 @@ function DestinationPage() {
                 </Route>
                 <Route path="/destinations">
                     <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-                    <Filter />
+                    <Filter amenityFilter={amenityFilter} setAmenityFilter={setAmenityFilter} />
                     <DestinationList destinations={displayedDestinations}/>
                 </Route>
                 <Route path="/feature/:id">
