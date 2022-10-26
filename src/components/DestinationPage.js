@@ -25,7 +25,7 @@ function DestinationPage() {
 
     return (
         <div>
-            <NavLink to="/destinations">Destinations</NavLink>
+            <NavLink to="/destinations">Browse and Search Destinations</NavLink><NavLink to="/new">Add New Destination</NavLink>
             <Switch>
                 <Route exact path="/">
                     <p>Welcome to Travel Tracker Beta!</p>

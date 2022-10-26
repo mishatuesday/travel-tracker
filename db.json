@@ -1,134 +1,343 @@
 {
-    "destinations": [
-      {
-        "id": 1,
-        "name": "Geneva",
-        "country": "Switzerland",
-        "image": "https://deih43ym53wif.cloudfront.net/chillon-castle-geneva-lake-switzerland-shutterstock_361751813_fbaba5c297.jpeg",
-        "amenities": ["5-Star Restaurants", "Winter Sports", "Nightlife", "Museums", "Hiking", "Architecture", "Mountain View"]
-      },
-      {
-        "id": 2,
-        "name": "Hokkaido",
-        "country": "Japan",
-        "image": "https://peakvisor.com/photo/Summer-Flower-Fields-Biei-Hokkaido.jpg",
-        "amenities": ["5-Star Restaurants", "Beach", "Winter Sports", "Nightlife", "Museums", "Hiking", "Architecture"]
-      },
-      {
-        "id": 3,
-        "name": "Zihuatanejo",
-        "country": "Mexico",
-        "image": "https://www.mensjournal.com/wp-content/uploads/2021/12/ZihuaHeader.jpg?quality=40&strip=all",
-        "amenities": ["5-Star Restaurants", "Beach", "Nightlife", "Hiking"]
-      },
-      {
-        "id": 4,
-        "name": "Positano",
-        "country": "Italy",
-        "image": "https://a.cdn-hotels.com/gdcs/production144/d547/b9cfd8e5-212f-4945-8010-b76f326ccd18.jpg?impolicy=fcrop&w=800&h=533&q=medium",
-        "amenities": ["5-Star Restaurants", "Beach", "Nightlife", "Museums", "Hiking", "Architecture"]
-      },
-      {
-        "id": 5,
-        "name": "Isla Holbox",
-        "country": "Quintana Roo, Mexico",
-        "image": "https://www.ourescapeclause.com/wp-content/uploads/2017/01/shutterstock_1161420244-scaled.jpg",
-        "amenities": ["Beach", "5-Star Restaurants", "Night Life", "Budget Friendly", "Snorkeling", "Live Music"]
-      },
-      {
-        "id": 6,
-        "name": "New Orleans",
-        "country": "USA",
-        "image": "https://media.timeout.com/images/105770969/750/422/image.jpg",
-        "amenities": ["Night Life", "Museums", "5-star Restaurants", "Budget Friendly", "Guided Tours", "Live Music"]
-      },
-      {
-        "id": 7,
-        "name": "Reykjavik",
-        "country": "Iceland",
-        "image": "https://tourscanner.com/blog/wp-content/uploads/2021/07/things-to-do-in-Reykjavik.jpg",
-        "amenities": ["5-Star Restaurants", "Nightlife", "Museums", "Winter Sports", "Hiking", "Architecture", "Hot Springs"]
-      },
-      {
-        "id": 8,
-        "name": "New York City",
-        "country": "USA",
-        "image": "https://www.nycgo.com/images/uploads/NY_in_3_days/TimeSquare-Manhattan-NYC-BrittanyPetronella_0069sat.jpg",
-        "amenities": [
-          "5-Star Restaurants",
-          "Beach",
-          "Nightlife",
-          "Museums",
-          "Architecture",
-          "Mountain View"
-        ]
-      },
-      {
-        "id": 9,
-        "name": "Brimley, Michigan",
-        "country": "USA",
-        "image": "https://www.michigan.org/sites/default/files/listing_images/profile/11836/c2c8aa5c5cefef1777162f48bc87b5fb_img_20130523_132717.jpg",
-        "amenities": [
-          "Lake",
-          "Casino",
-          "museums",
-          "Winter Sports",
-          "Hiking",
-          "Mountain View"
-          ]
-      },
-      {
-        "id": 10,
-        "name": "Ocho Rios",
-        "country": "Jamaica",
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/a3/dd/f8/hotel-riu-ocho-rios.jpg?w=700&h=-1&s=1",
-        "amenities": [
-          "Beach",
-          "Nightlife",
-          "Hiking",
-          "Zipline",
-          "Waterfall"
-        ]
-      },
-      {
-        "id": 11,
-        "name": "Bogotá",
-        "country": "Colombia",
-        "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/b5/57.jpg",
-        "amenities": [
-          "5-Star Restaurants",
-          "Nightlife",
-          "Museums",
-          "Hiking",
-          "Architecture",
-          "Mountain View"
-        ]
-      },
-      {
-        "id": 12,
-        "name": "Glasgow, Scotland",
-        "country": "United Kingdom",
-        "image": "https://media.timeout.com/images/105400989/750/422/image.jpg",
-        "amenities": [
-          "Nightlife",
-          "Museums",
-          "Hiking",
-          "Architecture",
-          "Pipe Bands",
-          "Haggis"
-        ]
-      },
-      {
-        "id": 13,
-        "name": "London, England",
-        "country": "United Kingdom",
-        "image": "https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/bltf5fca6a3eec4d180/6139d40bec680b43eb02a9ee/US_London_UK_Header.jpg",
-        "amenities": [
-          "5-Star Restaurants",
-          "Nightlife",
-          "Museums",
-          "Architecture"
-        ]
-      }
-    ]
+  "destinations": [
+    {
+      "id": 1,
+      "name": "Geneva",
+      "country": "Switzerland",
+      "image": "https://deih43ym53wif.cloudfront.net/chillon-castle-geneva-lake-switzerland-shutterstock_361751813_fbaba5c297.jpeg",
+      "amenities": [
+        "5-Star Restaurants",
+        "Winter Sports",
+        "Nightlife",
+        "Museums",
+        "Hiking",
+        "Architecture",
+        "Mountain View"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Hokkaido",
+      "country": "Japan",
+      "image": "https://peakvisor.com/photo/Summer-Flower-Fields-Biei-Hokkaido.jpg",
+      "amenities": [
+        "5-Star Restaurants",
+        "Beach",
+        "Winter Sports",
+        "Nightlife",
+        "Museums",
+        "Hiking",
+        "Architecture"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Zihuatanejo",
+      "country": "Mexico",
+      "image": "https://www.mensjournal.com/wp-content/uploads/2021/12/ZihuaHeader.jpg?quality=40&strip=all",
+      "amenities": [
+        "5-Star Restaurants",
+        "Beach",
+        "Nightlife",
+        "Hiking"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Positano",
+      "country": "Italy",
+      "image": "https://a.cdn-hotels.com/gdcs/production144/d547/b9cfd8e5-212f-4945-8010-b76f326ccd18.jpg?impolicy=fcrop&w=800&h=533&q=medium",
+      "amenities": [
+        "5-Star Restaurants",
+        "Beach",
+        "Nightlife",
+        "Museums",
+        "Hiking",
+        "Architecture"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Isla Holbox",
+      "country": "Quintana Roo, Mexico",
+      "image": "https://www.ourescapeclause.com/wp-content/uploads/2017/01/shutterstock_1161420244-scaled.jpg",
+      "amenities": [
+        "Beach",
+        "5-Star Restaurants",
+        "Night Life",
+        "Budget Friendly",
+        "Snorkeling",
+        "Live Music"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "New Orleans",
+      "country": "USA",
+      "image": "https://media.timeout.com/images/105770969/750/422/image.jpg",
+      "amenities": [
+        "Night Life",
+        "Museums",
+        "5-star Restaurants",
+        "Budget Friendly",
+        "Guided Tours",
+        "Live Music"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Reykjavik",
+      "country": "Iceland",
+      "image": "https://tourscanner.com/blog/wp-content/uploads/2021/07/things-to-do-in-Reykjavik.jpg",
+      "amenities": [
+        "5-Star Restaurants",
+        "Nightlife",
+        "Museums",
+        "Winter Sports",
+        "Hiking",
+        "Architecture",
+        "Hot Springs"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "New York City",
+      "country": "USA",
+      "image": "https://www.nycgo.com/images/uploads/NY_in_3_days/TimeSquare-Manhattan-NYC-BrittanyPetronella_0069sat.jpg",
+      "amenities": [
+        "5-Star Restaurants",
+        "Beach",
+        "Nightlife",
+        "Museums",
+        "Architecture",
+        "Mountain View"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Brimley, Michigan",
+      "country": "USA",
+      "image": "https://www.michigan.org/sites/default/files/listing_images/profile/11836/c2c8aa5c5cefef1777162f48bc87b5fb_img_20130523_132717.jpg",
+      "amenities": [
+        "Lake",
+        "Casino",
+        "museums",
+        "Winter Sports",
+        "Hiking",
+        "Mountain View"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Ocho Rios",
+      "country": "Jamaica",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/a3/dd/f8/hotel-riu-ocho-rios.jpg?w=700&h=-1&s=1",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "Hiking",
+        "Zipline",
+        "Waterfall"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Bogotá",
+      "country": "Colombia",
+      "image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/b7/b5/57.jpg",
+      "amenities": [
+        "5-Star Restaurants",
+        "Nightlife",
+        "Museums",
+        "Hiking",
+        "Architecture",
+        "Mountain View"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Glasgow, Scotland",
+      "country": "United Kingdom",
+      "image": "https://media.timeout.com/images/105400989/750/422/image.jpg",
+      "amenities": [
+        "Nightlife",
+        "Museums",
+        "Hiking",
+        "Architecture",
+        "Pipe Bands",
+        "Haggis"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "London, England",
+      "country": "United Kingdom",
+      "image": "https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/bltf5fca6a3eec4d180/6139d40bec680b43eb02a9ee/US_London_UK_Header.jpg",
+      "amenities": [
+        "5-Star Restaurants",
+        "Nightlife",
+        "Museums",
+        "Architecture"
+      ]
+    },
+    {
+      "name": "Las Vegas, Nevada",
+      "country": "USA",
+      "image": "https://media.timeout.com/images/105483066/750/422/image.jpg",
+      "amenities": [
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 14
+    },
+    {
+      "name": "Sedona, Arizona",
+      "country": "USA",
+      "image": "https://assets.landandfarm.com/resizedimages/640/1024/l/80/1-3822795365",
+      "amenities": [
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 15
+    },
+    {
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "image": "http://www.reservasdecoches.com/blog/wp-content/uploads/9dejulio-460x345.jpg",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 16
+    },
+    {
+      "name": "Amber Cove",
+      "country": "Dominican Republic",
+      "image": "https://www.carnival.com/-/media/images/explore/destinations/ports/carnival-caribbean-port-amber-cove-4.jpg",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 17
+    },
+    {
+      "name": "Paris",
+      "country": "France",
+      "image": "https://cdn.travelpulse.com/images/faa9edf4-a957-df11-b491-006073e71405/c0594e9a-dd27-41b9-b02b-0c0362deadce/630x355.jpg",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 18
+    },
+    {
+      "name": "Casablanca",
+      "country": "Morocco",
+      "image": "https://www.visitmorocco.com/sites/default/files/styles/thumbnail_events_slider/public/thumbnails/image/city-panorama.-casablanca-morocco.-africa-marianna-ianovska.jpg?itok=h4FjZSIp",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 19
+    },
+    {
+      "name": "Cape Town",
+      "country": "South Africa",
+      "image": "https://www.tripsavvy.com/thmb/KNqBFCukoaDeABkCsj0vDHn1_SM=/1499x1499/smart/filters:no_upscale()/aerial-view-of-cape-town-and-it-s-majestic--flat-topped-table-mountain-1169318257-07b81b2f33d74f6aaf1685b306c86bfa.jpg",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 20
+    },
+    {
+      "name": "test",
+      "country": "test",
+      "image": "https://www.tripsavvy.com/thmb/KNqBFCukoaDeABkCsj0vDHn1_SM=/1499x1499/smart/filters:no_upscale()/aerial-view-of-cape-town-and-it-s-majestic--flat-topped-table-mountain-1169318257-07b81b2f33d74f6aaf1685b306c86bfa.jpg",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 21
+    },
+    {
+      "name": "Testville",
+      "country": "Fakia",
+      "image": "https://www.tripsavvy.com/thmb/KNqBFCukoaDeABkCsj0vDHn1_SM=/1499x1499/smart/filters:no_upscale()/aerial-view-of-cape-town-and-it-s-majestic--flat-topped-table-mountain-1169318257-07b81b2f33d74f6aaf1685b306c86bfa.jpg",
+      "amenities": [
+        "Beach"
+      ],
+      "id": 22
+    },
+    {
+      "name": "test",
+      "country": "test",
+      "image": "test",
+      "amenities": [
+        "Museums"
+      ],
+      "id": 23
+    },
+    {
+      "name": "test",
+      "country": "test",
+      "image": "test",
+      "amenities": [
+        "5-Star Restaurants"
+      ],
+      "id": 24
+    },
+    {
+      "name": "noise",
+      "country": "noise",
+      "image": "noise",
+      "amenities": [
+        "Beach",
+        "Nightlife",
+        "5-Star Restaurants",
+        "Hiking",
+        "Museums"
+      ],
+      "id": 25
+    },
+    {
+      "name": "only",
+      "country": "hiking",
+      "image": "test",
+      "amenities": [
+        "Hiking"
+      ],
+      "id": 26
+    },
+    {
+      "name": "only",
+      "country": "nightlife",
+      "image": "test",
+      "amenities": [
+        "Nightlife"
+      ],
+      "id": 27
+    }
+  ]
 }
