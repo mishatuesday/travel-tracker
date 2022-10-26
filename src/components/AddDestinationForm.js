@@ -8,15 +8,30 @@ function AddDestinationForm(props) {
     const [name, setName] = useState('')
     const [country, setCountry] = useState('')
     const [image, setImage] = useState('')
-    const [checkedState, setCheckedState] = useState(false)
+    const [checkedState, setCheckedState] = useState([false, false, false, false, false])
 
-    const handleOnChange = () => {
-         setCheckedState(!checkedState)
+    const handleOnChange = (index) => {
+        const newCheckedState = checkedState.map((check, thisIndex) => {
+            if (thisIndex === index) {
+                return !check
+            } else {
+                return check
+            }
+        })
+        setCheckedState(newCheckedState)
          //This is where we need to update, probably needs to be a ternary of some sort
+         // There was only a single checkedState boolean for five amenities; I made it an array of booleans. -Misha
     }
 
     const handleSubmit = e => {
         e.preventDefault()
+        let newAmenities = []
+        if (checkedState[0] === true) newAmenities.push("Beach")
+        if (checkedState[1] === true) newAmenities.push("Nightlife")
+        if (checkedState[2] === true) newAmenities.push("5-Star Restaurants")
+        if (checkedState[3] === true) newAmenities.push("Hiking")
+        if (checkedState[4] === true) newAmenities.push("Museums")
+        console.log(newAmenities)
         fetch(`http://localhost:3000/destinations/`, {
             method: 'POST',
             headers: {
