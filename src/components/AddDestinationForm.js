@@ -43,7 +43,8 @@ function AddDestinationForm(props) {
                 name: name,
                 country: country,
                 image: image,
-                amenities: newAmenities
+                amenities: newAmenities,
+                notes: ""
             }),
         })
         .then(resp => resp.json())

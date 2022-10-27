@@ -14,7 +14,7 @@
         "Architecture",
         "Mountain View"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 2,
@@ -30,7 +30,7 @@
         "Hiking",
         "Architecture"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 3,
@@ -43,7 +43,7 @@
         "Nightlife",
         "Hiking"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 4,
@@ -58,7 +58,7 @@
         "Hiking",
         "Architecture"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 5,
@@ -73,7 +73,7 @@
         "Snorkeling",
         "Live Music"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 6,
@@ -88,7 +88,7 @@
         "Guided Tours",
         "Live Music"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 7,
@@ -104,7 +104,7 @@
         "Architecture",
         "Hot Springs"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 8,
@@ -119,7 +119,7 @@
         "Architecture",
         "Mountain View"
       ],
-      "notes":""
+      "notes": "Times Square is a nightmare, but the Brooklyn Zoo is awesome!"
     },
     {
       "id": 9,
@@ -129,12 +129,11 @@
       "amenities": [
         "Lake",
         "Casino",
-        "museums",
         "Winter Sports",
         "Hiking",
         "Mountain View"
       ],
-      "notes":""
+      "notes": "Monocle Lake campground is nice, smallish lake, hiking along the ridge. There's a fairly lame casino in Brimley, but I think that counts as nightlife!"
     },
     {
       "id": 10,
@@ -148,7 +147,7 @@
         "Zip Line",
         "Waterfall"
       ],
-      "notes":""
+      "notes": "The downtown is just a cruise tourist trap but the beach and surrounding area is paradise."
     },
     {
       "id": 11,
@@ -163,7 +162,7 @@
         "Architecture",
         "Mountain View"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 12,
@@ -178,7 +177,7 @@
         "Pipe Bands",
         "Haggis"
       ],
-      "notes":""
+      "notes": ""
     },
     {
       "id": 13,
@@ -191,7 +190,7 @@
         "Museums",
         "Architecture"
       ],
-      "notes":""
+      "notes": "One of my favorite cities! Never been up in the Shard, though..."
     },
     {
       "name": "Las Vegas, Nevada",
@@ -205,7 +204,7 @@
         "Zip Line"
       ],
       "id": 14,
-      "notes":""
+      "notes": "Must see Omega Mart at Area 51! Also, Valley of Fire not too far from the city is one of the most unusual and striking landscapes I've ever hiked..."
     },
     {
       "name": "Sedona, Arizona",
@@ -217,7 +216,7 @@
         "Museums"
       ],
       "id": 15,
-      "notes":""
+      "notes": ""
     },
     {
       "name": "Buenos Aires",
@@ -231,7 +230,7 @@
         "Museums"
       ],
       "id": 16,
-      "notes":""
+      "notes": ""
     },
     {
       "name": "Amber Cove",
@@ -245,7 +244,7 @@
         "Museums"
       ],
       "id": 17,
-      "notes":""
+      "notes": ""
     },
     {
       "name": "Paris",
@@ -259,7 +258,7 @@
         "Museums"
       ],
       "id": 18,
-      "notes":""
+      "notes": ""
     },
     {
       "name": "Casablanca",
@@ -273,7 +272,7 @@
         "Museums"
       ],
       "id": 19,
-      "notes":""
+      "notes": ""
     },
     {
       "name": "Cape Town",
@@ -287,7 +286,19 @@
         "Museums"
       ],
       "id": 20,
-      "notes":""
+      "notes": ""
+    },
+    {
+      "name": "Cairo",
+      "country": "Egypt",
+      "image": "https://cdn.britannica.com/80/177980-050-A4080BA5/City-of-the-Dead-Egypt-Cairo.jpg",
+      "amenities": [
+        "Nightlife",
+        "5-Star Restaurants",
+        "Museums"
+      ],
+      "notes": "There is a lot to do in Cairo, and you can take a day trip to the pyramids!",
+      "id": 21
     }
   ]
 }
