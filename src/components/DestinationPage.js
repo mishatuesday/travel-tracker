@@ -14,6 +14,7 @@ function DestinationPage() {
     const [destinations, setDestinations] = useState([])
     const [searchTerm, setSearchTerm] = useState("")
     const [checkedAmenities, setCheckedAmenities] = useState([]) // added for amenity filter stretch goal
+    const [notes, setNotes] = useState('')
 
     useEffect(() => {
         fetch(destinationUrl)
@@ -62,7 +63,7 @@ function DestinationPage() {
                     <DestinationList destinations={displayedDestinations}/>
                 </Route>
                 <Route path="/feature/:id">
-                    <Feature destinations={destinations}/>
+                    <Feature destinations={destinations} notes={notes} setNotes={setNotes}/>
                 </Route>
             </Switch>
         </div>
