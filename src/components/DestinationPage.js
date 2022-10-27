@@ -45,14 +45,18 @@ function DestinationPage() {
 
     return (
         <div>
-            <Button icon labelPosition='left'>
-                <Icon name='search'/>
-                <NavLink to="/destinations">Search Destinations</NavLink>
-            </Button>
-            <Button icon labelPosition='right'>
-                <Icon name='wordpress forms'/>
-                <NavLink to="/new">Add New Destination</NavLink>
-            </Button>
+            <NavLink to="/destinations">
+                <Button icon labelPosition='left'>
+                    <Icon name='search'/>
+                    Search Destinations
+                </Button>
+            </NavLink>
+            <NavLink to="/new">
+                <Button icon labelPosition='right'>
+                    <Icon name='wordpress forms'/>
+                    Add New Destination
+                </Button>
+            </NavLink>
             <Switch>
                 <Route exact path="/">
                     <Container text>
