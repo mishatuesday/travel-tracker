@@ -36,6 +36,13 @@ function DestinationPage() {
         return destination.name.toLowerCase().includes(searchTerm.toLowerCase())
     })
 
+    function updateDestinations(idToUpdate, newNotes) {
+        const updatedDestinations = destinations.map(destination => {
+            return (destination.id === idToUpdate) ? {...destination, notes: newNotes} : {...destination}
+        })
+        setDestinations(updatedDestinations)
+    }
+
     return (
         <div>
             <Button icon labelPosition='left'>
@@ -63,7 +70,7 @@ function DestinationPage() {
                     <DestinationList destinations={displayedDestinations}/>
                 </Route>
                 <Route path="/feature/:id">
-                    <Feature destinations={destinations} notes={notes} setNotes={setNotes}/>
+                    <Feature destinations={destinations} notes={notes} setNotes={setNotes} destinationUrl={destinationUrl} updateDestinations={updateDestinations} />
                 </Route>
             </Switch>
         </div>

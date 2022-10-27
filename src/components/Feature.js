@@ -1,17 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-import {Image, Header, Segment, List, Label, Form, TextArea, Checkbox, Divider} from 'semantic-ui-react'
+import {Image, Header, Segment, List, Label, Form, TextArea, Checkbox, Divider, Button} from 'semantic-ui-react'
 
 
-function Feature({destinations, notes, setNotes}) {
+function Feature({destinations, notes, setNotes, destinationUrl, updateDestinations}) {
     const { id } = useParams()
     const destination = destinations[id-1]
 
+    useEffect(() => {
+        setNotes(destination.notes)
+    }, [])
     
+    function saveNotes(e) {
+        fetch(`${destinationUrl}${destination.id}`, {
+            method: "PATCH", 
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+            },
+            body: JSON.stringify({
+                notes: notes
+            })  
+        })
+        .then(r => r.json())
+        .then(data => updateDestinations(data.id, data.notes))
+    }
 
     return (
         <div> 
-            {destination ?
+            {destination ? 
             <div className="feature-container">
                 <Divider/>
                 <Header as='h2'>{destination.name}</Header>
@@ -40,6 +57,9 @@ function Feature({destinations, notes, setNotes}) {
                         style={{ minHeight: 80, maxWidth: 600 }}
                         rounded bordered
                         />
+                    </Form.Field>
+                    <Form.Field>
+                        <Button onClick={e => saveNotes(e)}>Save Notes</Button>
                     </Form.Field>
                     <Form.Field>
                         <Checkbox label='I have visited this destination' />
