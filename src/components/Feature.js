@@ -55,7 +55,6 @@ function Feature({destinations, notes, setNotes, destinationUrl, updateDestinati
                         onChange={e => setNotes(e.target.value)}
                         placeholder='Jot down notes about this destination...' 
                         style={{ minHeight: 80, maxWidth: 600 }}
-                        rounded bordered
                         />
                     </Form.Field>
                     <Form.Field>
