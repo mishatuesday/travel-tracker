@@ -31,7 +31,6 @@ function Filter({checkedAmenities, setCheckedAmenities, amenitiesFilter, setAmen
                     )
                 })
             }
-            <button onClick={e => setCheckedAmenities([])}>clear all</button>
         </div>
     )
 }
