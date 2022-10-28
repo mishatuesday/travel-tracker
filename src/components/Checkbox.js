@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 function Checkbox({amenity, checkedAmenities, setCheckedAmenities}) {
     // const initialCheckStatus = checkedAmenities.includes(amenity)
     // const [checked, setChecked] = useState(!initialCheckStatus)
-    const [checked, setChecked] = useState(false)
+    const [checked, setChecked] = useState(checkedAmenities.includes(amenity))
 
     
     useEffect(() => {   
